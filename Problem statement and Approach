@@ -1,23 +1,22 @@
 Problem Statement:
-Up sell and Cross Sell of products
+Facilitate the Up sell and Cross Sell of products
 
 Initial State:
 The sales are done on a ad-hoc basis. There is no strategies for upselling and cross selling of products to the customers.
 
 Final State:
-This is being used to upsell and cross sell products by the sales team.
+There are strategies to upsell and cross sell products by the sales team.
 
 Questions:
-1) What are the data points to be needed? Are there any redundancies and inconsistencies present among various databases? What new information has to be captured going forward?
-2) What and how to present the organization data in Tableau to bolster the users to make effective decisions?
+1) What are the metrics to be considered in order to select products to upsell and cross sell the products?
+2) Which technique has to be used for the process?
 
 Approach:
 
 Data preparation: 
-1) Data points were aggregated at the level of ,
-Revenue, Type of Revenue, Business Units, Country, Industry, DateTime, Customer, Product, Product Category
+1) Data was created to a transaction type data set where in each
 
-Redundant data like other sub branches of product category were removed and the sales team comments, product managers name 
+Redundant data like other sub branches of product category were removed and the sales team comments, product managers name.
 
 The following Inconsistencies were resolved among data from different data sources,
 1) The date time format was different

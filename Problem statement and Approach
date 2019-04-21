@@ -14,8 +14,7 @@ Questions:
 Approach:
 
 Data preparation: 
-1) Data was created to a transaction type data set where in each
-
+Data was created to a transaction type data set.
 Redundant data like other sub branches of product category were removed and the sales team comments, product managers name.
 
 The following Inconsistencies were resolved among data from different data sources,
@@ -23,26 +22,36 @@ The following Inconsistencies were resolved among data from different data sourc
 2) The format of the locations’ names was different
 
 Data Issues:
-All the clients did not have a mapping to an ultimate parent from Dun and Brad street data. They have to be manually searched for their parents one at a time which was enormously time consuming.
+All the clients did not have a mapping to an ultimate parent from Dun and Brad street data. They have to be manually searched for their
+parents one at a time which was enormously time consuming.
 
 A third party service provider created the final data warehouse which I leveraged for analysis
 
 Dashboard creation:
 1) Tableau was connected to Oracle sql server database
 2) The pen and paper version of the dashboard was taken a sign off from the client
-3) Dashboard with each customer’s sales information along with the information of their peers was shown using graphs. Had information about products purchased along with its timestamp 
-4) The dashboard was created only for a subset of important customers’ data. Leveraged bar charts, line graphs, reference lines, tree map, world maps, pie chart, area chart, highlight tables
+3) Dashboard with each customer’s sales information along with the information of their peers was shown using graphs. 
+Had information about products purchased along with its timestamp 
+4) The dashboard was created only for a subset of important customers’ data. Leveraged bar charts, line graphs, reference lines, 
+tree map, world maps, pie chart, area chart, highlight tables
 
 Insights example:
-For upselling, take 3 banking customers. TCF bank, JP Morgan, US bank. US bank is using a product in finance from 3 years and has a high usage. On the other hand, JP Morgan who is also into the same finance industry is not using it. This will be visible from the dashboard and the Sales team can research about its product specifications from the products team and pitch this product to JP Morgan.
-Similarly, for cross selling. If US bank is having a high usage on a legal product from a long time and TCF bank does not have any usage. The sales team can research about its product specifications from the products team and pitch this to TCF bank. 
+For upselling, take 3 banking customers. TCF bank, JP Morgan, US bank. US bank is using a product in finance from 3 years and has a 
+high usage. On the other hand, JP Morgan who is also into the same finance industry is not using it. This will be visible from the 
+dashboard and the Sales team can research about its product specifications from the products team and pitch this product to JP Morgan.
+
+Similarly, for cross selling. If US bank is having a high usage on a legal product from a long time and TCF bank does not have any usage.
+The sales team can research about its product specifications from the products team and pitch this to TCF bank. 
 
 In this process, the organization earns a good relation since it is trying to improve the customer in some way.
-  
+
+Modelling:
+As a POC, Apriori algorithm was also implemented to improve up-selling and cross selling.
+
 Next Steps:
 1) Finish the manual mapping of all the customers to their parent organization names
 2) Run the dashboard on the entire customers’ data
 3) Follow up with the sales team for modifications as per their views
-
+4) Do the iterations for the Aprioiri Algorithm and implement it for better up-selling and cross-selling strategies
 
 
